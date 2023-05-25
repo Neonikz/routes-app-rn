@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { StyleSheet, Text, View,Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { PermissionsContext } from '../context/PermissionsContext';
+import { BlackButton } from '../components/BlackButton';
 
 
 export const PermissionsScreen = () => {
@@ -12,7 +13,7 @@ export const PermissionsScreen = () => {
         <View style={ styles.container }>
             <Text style={ styles.title }>Es necesario el uso del GPS para usar esta aplicación </Text>
 
-            <Button
+            <BlackButton
                 title="Permission"
                 onPress={ askLocationPermission }
             />
