@@ -3,6 +3,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { Navigator } from './src/navigation/Navigator';
 import { PermissionsProvider } from './src/context/PermissionsContext';
+import {enableLatestRenderer} from 'react-native-maps';
 
 const AppState = ({ children }: any) =>{
   return (
@@ -24,3 +25,5 @@ const App = () => {
 }
 
 export default App;
+
+enableLatestRenderer();
